@@ -5,8 +5,86 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bad+Script&family=Black+Han+Sans&family=Cormorant+Garamond:wght@300&family=Cormorant+Infant:ital,wght@1,300&family=Goblin+One&family=IBM+Plex+Serif:wght@100&family=Playfair+Display:wght@400;900&family=Slabo+27px&family=Vidaloka&display=swap" rel="stylesheet">
+  <style>
+    .intro{
+      width: 100vw;
+      height: 100vh;
+      background-color: #01010B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .name{
+      width: 50vw;
+      height: 50vh;
+      border: 1px solid white;
+      transform:rotate(-5deg)
+    }
+
+    .steam{
+      width: 5vw;
+      height: 5vw;
+      border: 1px solid white;
+    }
+
+    .name>div{
+      width: 50vw;
+      height: 15vh;
+      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .name>div:nth-child(1){
+      letter-spacing: 10px;
+    }
+
+
+    .name>div:nth-child(2){
+      width: 50vw;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .name>div:nth-child(3){
+      display: flex;
+      justify-content:flex-end;
+      align-items: flex-end;
+    }
+    h1{
+      font-size: 100px;
+      color: gold;
+      font-family: 'Goblin One', cursive;
+
+    }
+
+    h2{
+      font-size: 50px;
+      color: gold;
+    }
+
+
+
+  </style>
 </head>
 <body>
-  
+  <div class="intro">
+    <div class="name">
+      <div>
+        <h1>Gunfir<span style="color: red;">e</span></h1>
+      </div>
+      <div>
+        <h1>Reborn</h1>
+      </div>
+      <div>
+        <h2>공략 뿌시기</h2>
+      </div>
+    </div>
+    <div class="steam">스팀</div>
+  </div>
 </body>
 </html>
