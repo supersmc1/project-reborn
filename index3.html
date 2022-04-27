@@ -5,10 +5,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bad+Script&family=Black+Han+Sans&family=Cormorant+Garamond:wght@300&family=Cormorant+Infant:ital,wght@1,300&family=Goblin+One&family=IBM+Plex+Serif:wght@100&family=Playfair+Display:wght@400;900&family=Slabo+27px&family=Vidaloka&display=swap" rel="stylesheet">
+  <style>
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .phone{
+      width: 420px;
+      height: 926px;
+      background-color:#01010B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .phone>div:nth-child(1){
+      width: 223px;
+      height: 99px;
+      border:1px solid white;
+    }
+    .phone>div:nth-child(1)>div{
+      width: 223;
+      height: 49.5px;
+      border: 1px solid seashell;
+      color: gold;
+      font-size: 40px;
+      font-family: 'Goblin One', cursive;
+
+    }
+    span{
+      font-size: 30px;
+    }
+
+  </style>
 </head>
 <body>
-  <div>
-    
+  <div class="phone">
+    <div>
+      <div>G<span>un</span>f<span>ir</span><span style="color: red;">e</span></div>
+      <div>R<span>e</span>b<span>orn</span></div>
+    </div>
+    <div>공략뿌시기</div>
+    <div>ID</div>
+    <div>PASS</div>
+    <div>
+      <div>SIGN IN</div>
+      <div>SIGN UP</div>
+    </div>
   </div>
 </body>
 </html>
