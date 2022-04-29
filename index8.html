@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=, initial-scale=1.0">
   <title>Document</title>
   <style>
      body{
@@ -124,125 +124,138 @@
       font-weight: bold;
     }
 
-    .menu>div:nth-child(4){
+    .menu>div:nth-child(1){
       font-size: 20px;
     }
 
-    .main{
+    .legend{
       width: 420px;
-      height: 350px;
+      height: 70px;
+      background-color:#4A1E27;
       display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-
-    .main>div:nth-child(2){
-      width: 199px;
-      height: 306px;
-      background-image:url(/img/원숭이.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .main>div:nth-child(3){
-      width: 69px;
-      height: 306px;
-      background-image:url(/img/도마뱀.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .main>div:nth-child(1){
-      width: 69px;
-      height: 306px;
-      background-image:url(/img/뱀.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-
-    .main2{
-      width: 420px;
-      height: 114px;
-      display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
     }
-
-    .main2>div:nth-child(1){
-      width: 34px;
-      height: 46px;
-      background-color: #181818;
+    .legend>div{
+      width: 58px;
+      height: 56px;
+      border-radius: 50%;
     }
+    .legend>div:nth-child(1){
+      background-image:url(/img/여우.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .legend>div:nth-child(2){
+      background-image:url(/img/멍멍이.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .legend>div:nth-child(3){
+      background-image:url(/img/참새.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .legend>div:nth-child(4){
+      background-image:url(/img/호랑이.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .legend>div:nth-child(5){
+      background-image:url(/img/토끼.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .legend>div:nth-child(6){
+      background-image:url(/img/거북이.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .select{
+      width: 420px;
+      height: 716px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .select>div{
+      width: 336px;
+      height: 101px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #2C2C2C;
+      margin-top: 20px;
+      border-radius: 35px;
+    }
+
+    .select>div>div:nth-child(1){
+      width: 64px;
+      height: 56px;
+      margin-left: 20px;}
+  
+    .select>div:nth-child(1)>div:nth-child(1){
+      width: 60px;
+      height: 56px;
+      margin-left: 20px;
+    }
+
     
-    .main2>div:nth-child(2){
-      width: 138px;
-      height: 46px;
-      background-color: #181818;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      color: white;
-
-    }
-
-    .main2>div:nth-child(3){
-      width: 34px;
-      height: 46px;
-      background-color: #181818;
-    }
-    .main3{
-      width: 420px;
-      height: 322px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .main3>div{
-      width: 399px;
-      height: 301px;
-      background-color: #181818;
+    .select>div>div:nth-child(2){
+      width: 166px;
+      height: 101px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+    }
+    .select>div>div:nth-child(2)>div:nth-child(1){
+      width: 124px;
+      height: 32.56px;
+      display: flex;
+      justify-content: center;
       align-items: center;
-      
+      font-size: 20px;
+      background-color: #4A1E27;
+      color:#E2E0E0;
+      font-weight: bold;
     }
 
-    .main3>div>div{
+    .select>div>div:nth-child(2)>div:nth-child(2){
+      font-size: 24px;
+      width: 180px;
+      height: 32.56px;
       color: white;
-      font-size: 20;
+      font-weight: bold;
+      margin-top: 5px;
     }
 
-    .main3>div>div:nth-child(1){
-      width: 353px;
-      height: 23px;
-      margin-top:21px;
+    .select>div:nth-child(1)>div:nth-child(1){
+      background-image:url(/img/연막크.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
-    .main3>div>div:nth-child(2){
-      width: 353px;
-      height: 60px;
-      margin-top:15px;
-
+    .select>div:nth-child(2)>div:nth-child(1){
+      background-image:url(/img/속성크.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
-
-    .main3>div>div:nth-child(3){
-      width: 353px;
-      height: 48px;
-      margin-top:15px;
-
-    }
-
-    .main3>div>div:nth-child(4){
-      width: 353px;
-      height: 48px;
-      margin-top:15px;
-
+    
+    .select>div:nth-child(3)>div:nth-child(1){
+      background-image:url(/img/오브크.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
 
@@ -267,22 +280,35 @@
       <div>무기,스크롤</div>
       <div>보스</div>
     </div>
-    <div class="main">
+    <div class="legend">
+      <div></div>
+      <div></div>
+      <div></div>
       <div></div>
       <div></div>
       <div></div>
     </div>
-    <div class="main2">
-      <div></div>
-      <div>육오</div>
-      <div></div>
-    </div>
-    <div class="main3">
+    <div class="select">
       <div>
-        <div>1. 약점은 머리부분이다 머리 부분 을 공략 </div>
-        <div>2. 어느정도 데미지를 입히면 바위 위로 올라가 쉴드를 회복한다 이때 좌, 우로 잡몹들이 나오는데 페이즈가 진행 될수록 강한 잡몹이 나온다</div>
-        <div>3. 보스의 원거리 공격은 점프 대쉬로 피할수 있으나 근처 벽뒤에 숨으면 막아진다</div>
-        <div>4. 보스의 점프 공격은 점프 오른쪽, 왼쪽 대쉬를 통해 피할수 있다</div>
+        <div></div>
+        <div>
+          <div>연막빌드</div>
+          <div>자욱한 연막</div>
+        </div>
+      </div>
+      <div>
+        <div></div>
+        <div>
+          <div>속성빌드</div>
+          <div>속성 대사</div>
+        </div>
+      </div>
+      <div>
+        <div></div>
+        <div>
+          <div>오브빌드</div>
+          <div>분열의 마법구슬</div>
+        </div>
       </div>
     </div>
 </body>
