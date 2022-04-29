@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gunfire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0; padding:0;}
+    .table{
+      width: 1920px;
+      height: 1080px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-image:url(https://blog.kakaocdn.net/dn/7tXhd/btqLA2K9kxR/n9DtldcLHLiOpXWnnmde31/img.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: black;
+    }
+
+    .s22{
+      width: 440px;
+      height: 938px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px;
+      background-color:rgb(189, 162, 10);
+      box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.534);
+      
+    }
+
+    .s22>div{
+      width: 400px;
+      height: 900px;
+      border: 8px solid black;
+      border-radius: 30px;
+      background-color: rgba(0, 0, 0, 0.897);
+      
+
+
+      
+    }
+
+    .header{
+      width: 400px;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 30px 30px 0px 0px;
+      background-color: rgba(128, 128, 128, 0.521);
+    }
+
+
+
+
+
+    /* 카메라 */
+    .header>div:nth-child(2){
+      width: 17px;
+      height: 17px;
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: gray;
+    }
+
+    /* 시계 */
+
+    .header>div:nth-child(1){
+      width: 100px;
+      height: 17px;
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+
+    .header>div:nth-child(3){
+      width: 100px;
+      height: 17px;
+      color: white;
+    }
+
+
+
+    .display{
+      width: 400px;
+      height: 870px;
+      border-radius: 0px 0px 30px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      background-image: url(https://mblogthumb-phinf.pstatic.net/MjAyMDA3MTNfOTYg/MDAxNTk0NjAxNjE5ODY5.zPh33SOW6fWD-mOxVhqJgD31m5Nw7fAG7zJUd5f-qVwg.Omjf8IOTVAwUR0okISP8NlLrEj9XWQPuLWg5TmYFD7gg.GIF.0314625/Honeycam_2020-07-13_09-46-27.gif?type=w800);
+      background-repeat: no-repeat;
+      background-position:center;
+      background-size: 400px 65%;
+      background-color: rgba(49, 49, 49, 0.897);
+    }
+
+    .intro1{
+      position: relative;
+      top:510px;
+      right: 120px;
+      
+    }
+
+
+
+
+    .google{
+      width: 350px;
+      height: 100px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius:30px;
+      background-color:black;
+      color: white;
+      position: relative;
+      top: 350px;
+      background-image:url(https://woermannbrock.com/images/en-play-badge.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    /* 중간 폰트 */
+    .bulr{
+      width: 500px;
+      height: 200px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgba(167, 167, 167, 0.3);
+      backdrop-filter: blur(10px);
+      border-radius: 20%;
+      font-family: 'Black Han Sans', sans-serif; 
+      color:rgba(0, 0, 0, 0.705);
+      position:absolute;
+      font-size: 25px;
+    }
+    .bulr>h2{color:gold;
+    }
+    .bulr>div{
+      font-size: 40px;
+      color: rgba(255, 255, 255, 0.719);
+    }
+    
+
+
+      /* 아이폰 스타일 */
+
+    .iphone{
+      width: 440px;
+      height: 938px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px;
+      background-color: rgb(168, 21, 21);
+      box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.534);
+      
+    }
+    .display2{
+      width: 400px;
+      height: 900px;
+      background-color: rgba(49, 49, 49, 0.897);
+      border-radius: 30px 30px 30px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-image: url(https://blog.kakaocdn.net/dn/bx5Cfv/btqU0xiYMRu/Dl4KqnzAzFOw98OjFkvK00/img.gif);
+      background-position: center;
+      background-size: 400px 65%;
+      background-repeat: no-repeat;
+      border: 8px solid black;
+
+
+    }
+    .noch{
+      width: 400px;
+      height: 30px;
+      border-radius: 30px 30px 0px 0px;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      background-color:rgba(128, 128, 128, 0.541)
+    }
+    .noch>div:nth-child(1){
+      width: 80px;
+      display: flex;
+      justify-content:flex-end;
+      color: white;
+    }
+
+    .noch>div:nth-child(2){
+      width: 190px;
+      height: 30px;
+      background-color: black;
+      border-radius: 0px 0px 30px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .noch>div:nth-child(2)>div{
+      width: 70px;
+      height: 8px;
+      background-color: gray;
+      border-radius: 30px 30px 30px 30px;
+    }
+
+    .noch>div:nth-child(3){
+      color: white;
+    }
+
+    .intro2{
+      width: 350px;
+      height: 100px;
+      border: 1px solid black;
+      position: relative;
+      bottom:50px;
+      left:24px;
+      border-radius: 30px;
+      background-image: url(https://cdn.econovill.com/news/photo/201510/266625_66597_2654.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="table">
+<!-- 갤럭시 -->
+    <div class="s22">
+      
+      <div>
+        <!-- 갤럭시 머리 -->
+        <div class="header">
+          <div>U+ 12:00</div>
+          <div></div>
+          <div>WIFI-zone</div>
+        </div>
+        <!-- 화면 -->
+        <div class="display">
+            <!--구글플레이로고  -->
+          <div class="google"></div>
+        </div>
+      </div>
+
+    </div>
+      
+    
+    <div class="bulr"><h1>WELL COME</h1><h2>GUN FIR<span style=color:red>E</span>-Reborn</h2><div>공략 뿌수기</div>지금 바로 모바일 로 접속 하세요.</div> 
+  
+    <!-- 아이폰 -->
+    <div class="iphone">
+      <div class="display2">
+        <!-- m자탈모 -->
+        <div class="noch">
+          <div>KT 12:00</div>
+          <div>
+            <div></div>
+          </div>
+        <div>WIFi-zone</div>
+      <!-- 화면 -->
+      </div>
+      <div class="intro2"></div>
+      
+      
+      </div>
+    </div>
+
+
+
+
+  </div>
+</body>
+</html>

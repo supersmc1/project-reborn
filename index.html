@@ -5,287 +5,585 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>gunfire</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
   <style>
-    *{margin:0; padding:0;}
-    .table{
-      width: 1920px;
-      height: 1080px;
-      border: 1px solid black;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-image:url(https://blog.kakaocdn.net/dn/7tXhd/btqLA2K9kxR/n9DtldcLHLiOpXWnnmde31/img.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: black;
-    }
-
-    .s22{
-      width: 440px;
-      height: 938px;
-      border: 1px solid black;
+    body{
+      width: 100vw;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 40px;
-      background-color:rgb(189, 162, 10);
-      box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.534);
-      
     }
 
-    .s22>div{
-      width: 400px;
-      height: 900px;
-      border: 8px solid black;
-      border-radius: 30px;
-      background-color: rgba(0, 0, 0, 0.897);
-      
-
-
-      
+    .phone{
+      width: 420px;
+      height: 926px;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #190812;
     }
 
     .header{
-      width: 400px;
-      height: 30px;
+      width: 420px;
+      height: 63px;
+      border: 1px solid black;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-radius: 30px 30px 0px 0px;
-      background-color: rgba(128, 128, 128, 0.521);
+      margin-top: 35px;
+      background-color: #181818;
     }
 
+    .ham{
+      width: 39px;
+      height: 23px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left:25px;
+    }
+    .ham>div:nth-child(1){
+      width: 39px;
+      height: 3px;
+      border-radius: 5px;
+      background-color:#FDD028;
+      border: 1.5px solid black
+    }
+    .ham>div:nth-child(2){
+      width: 31px;
+      height: 3px;
+      border-radius: 5px;
+      background-color:#AC0815;
+      border: 1.5px solid black
+
+    }
+    .ham>div:nth-child(3){
+      width: 23.5px;
+      height: 3px;
+      border-radius: 5px;
+      background-color:#E73959;
+      border: 1.5px solid black
 
 
+    }
+    .ham>div:nth-child(4){
+      width: 31px;
+      height: 3px;
+      border-radius: 5px;
+      background-color:#AC0815;
+      border: 1.5px solid black
 
+    }
+    .ham>div:nth-child(5){
+      width: 39px;
+      height: 3px;
+      border-radius: 5px;
+      background-color:#FDD028;
+      border: 1.5px solid black
 
-    /* 카메라 */
+    }
+   
     .header>div:nth-child(2){
-      width: 17px;
-      height: 17px;
-      border: 1px solid black;
-      border-radius: 50%;
-      background-color: gray;
-    }
-
-    /* 시계 */
-
-    .header>div:nth-child(1){
-      width: 100px;
-      height: 17px;
-      display: flex;
-      justify-content: center;
-      color: white;
-    }
-
-    .header>div:nth-child(3){
-      width: 100px;
-      height: 17px;
-      color: white;
-    }
-
-
-
-    .display{
-      width: 400px;
-      height: 870px;
-      border-radius: 0px 0px 30px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-direction: column;
-      background-image: url(https://mblogthumb-phinf.pstatic.net/MjAyMDA3MTNfOTYg/MDAxNTk0NjAxNjE5ODY5.zPh33SOW6fWD-mOxVhqJgD31m5Nw7fAG7zJUd5f-qVwg.Omjf8IOTVAwUR0okISP8NlLrEj9XWQPuLWg5TmYFD7gg.GIF.0314625/Honeycam_2020-07-13_09-46-27.gif?type=w800);
-      background-repeat: no-repeat;
-      background-position:center;
-      background-size: 400px 65%;
-      background-color: rgba(49, 49, 49, 0.897);
-    }
-
-    .intro1{
-      position: relative;
-      top:510px;
-      right: 120px;
-      
-    }
-
-
-
-
-    .google{
-      width: 350px;
-      height: 100px;
-      border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      border-radius:30px;
-      background-color:black;
-      color: white;
-      position: relative;
-      top: 350px;
-      background-image:url(https://woermannbrock.com/images/en-play-badge.png);
+      width: 92px;
+      height: 43px;
+      background-image:url(https://macosxgame.com/wp-content/uploads/2020/06/Gunfire-Reborn.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-    }
-
-
-    /* 중간 폰트 */
-    .bulr{
-      width: 500px;
-      height: 200px;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background-color: rgba(167, 167, 167, 0.3);
-      backdrop-filter: blur(10px);
-      border-radius: 20%;
-      font-family: 'Black Han Sans', sans-serif; 
-      color:rgba(0, 0, 0, 0.705);
-      position:absolute;
-      font-size: 25px;
-    }
-    .bulr>h2{color:gold;
-    }
-    .bulr>div{
-      font-size: 40px;
-      color: rgba(255, 255, 255, 0.719);
+      border-radius: 10px;
     }
     
-
-
-      /* 아이폰 스타일 */
-
-    .iphone{
-      width: 440px;
-      height: 938px;
-      border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 40px;
-      background-color: rgb(168, 21, 21);
-      box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.534);
-      
-    }
-    .display2{
-      width: 400px;
-      height: 900px;
-      background-color: rgba(49, 49, 49, 0.897);
-      border-radius: 30px 30px 30px 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background-image: url(https://blog.kakaocdn.net/dn/bx5Cfv/btqU0xiYMRu/Dl4KqnzAzFOw98OjFkvK00/img.gif);
-      background-position: center;
-      background-size: 400px 65%;
+    .steam{
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      background-image:url(http://itimg.chosun.com/sitedata/image/202108/17/2021081701060_0.jpg);
       background-repeat: no-repeat;
-      border: 8px solid black;
-
+      background-position: center;
+      background-size: cover;
+      margin-right:25px;
 
     }
-    .noch{
-      width: 400px;
-      height: 30px;
-      border-radius: 30px 30px 0px 0px;
+
+    .menu{
+      width: 420px;
+      height: 42px;
+      border: 1px solid black;
       display: flex;
-      justify-content:space-around;
+      justify-content: space-around;
       align-items: center;
-      background-color:rgba(128, 128, 128, 0.541)
+      background-color: #181818;
     }
-    .noch>div:nth-child(1){
-      width: 80px;
-      display: flex;
-      justify-content:flex-end;
+    
+    .menu>div{
+      font-size: 14px;
       color: white;
     }
 
-    .noch>div:nth-child(2){
-      width: 190px;
-      height: 30px;
-      background-color: black;
-      border-radius: 0px 0px 30px 30px;
+    .menu>div:nth-child(1){
+      font-size: 20px;
+    }
+
+    .selct{
+      width: 124px;
+      height: 38px;
+      background-color: #181818;
+      border-radius: 10px;
+      margin-top: 35px;
+      color: white;
+      font-size: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    .noch>div:nth-child(2)>div{
-      width: 70px;
-      height: 8px;
-      background-color: gray;
-      border-radius: 30px 30px 30px 30px;
+
+    .main{
+      width: 420px;
+      height: 356px;
+      margin-top: 39px;
     }
 
-    .noch>div:nth-child(3){
+    .main>div:nth-child(1){
+      width: 420px;
+      height: 306px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .main>div:nth-child(1)>div:nth-child(1){
+      width: 61px;
+      height: 306px;
+      border-radius: 0px 25px 25px 0px;
+      background-size: cover;
+      background-repeat:no-repeat;
+      background-position: center;
+      background-image:url(./img/2화면\ 캡처\ 2022-04-12\ 153138\ 1\ \(2\).png);
+    }
+
+    .main>div:nth-child(1)>div:nth-child(2){
+      width: 199px;
+      height: 306px;
+      border-radius: 25px;
+      background-image:url(./img/1화면\ 캡처\ 2022-04-12\ 153339\ 1.png);
+      background-repeat:no-repeat;
+      background-position: center;
+    }
+
+    .main>div:nth-child(1)>div:nth-child(3){
+      width: 61px;
+      height: 306px;
+      border-radius: 25px 0px 0px 25px;
+      background-image:url(./img/3화면\ 캡처\ 2022-04-12\ 153302\ 2.png);
+      background-repeat:no-repeat;
+      background-position: center;
+    }
+
+    .main>div:nth-child(2){
+      width: 420px;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .main>div:nth-child(2)>div:nth-child(1){
+      width: 31px;
+      height: 35px;
+      border-radius: 0px 10px 10px 0px;
+      background-color:#181818;
+    }
+
+    .main>div:nth-child(2)>div:nth-child(2){
+      width: 105px;
+      height: 35px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
       color: white;
+      background-color:#181818;
+
     }
 
-    .intro2{
-      width: 350px;
-      height: 100px;
-      border: 1px solid black;
-      position: relative;
-      bottom:50px;
-      left:24px;
-      border-radius: 30px;
-      background-image: url(https://cdn.econovill.com/news/photo/201510/266625_66597_2654.png);
+    .main>div:nth-child(2)>div:nth-child(3){
+      width: 31px;
+      height: 35px;
+      border-radius: 10px 0px 0px 10px;
+      background-color:#181818;
+
+
+    }
+
+    .main2{
+      width: 420px;
+      height: 217px;
+      margin-top: 22px;
+      display: flex;
+      background-color: #181818;
+    }
+
+    .left{
+      width: 211px;
+      height: 217px;
+    }
+
+    .left>div:nth-child(1){
+      width: 60px;
+      height: 18px;
+      font-size: 15px;
+      margin-top: 9px;
+      margin-left: 16px;
+    }
+
+    .left>div:nth-child(2){
+      width: 104px;
+      height: 13px;
+      font-size: 10px;
+      display: flex;
+      font-weight: 400;
+    }
+
+    .left>div:nth-child(2)>div{
+      margin-left: 3px;
+      margin-top: 3px;
+    }
+
+    .left>div:nth-child(2)>div:nth-child(1){
+      width: 10px;
+      height: 10.29px;
+      background-image: url(./img/Group\ 6.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      margin-left: 10px;
+    }
+
+    .left>div:nth-child(2)>div:nth-child(3){
+      width: 10px;
+      height: 10.29px;
+      background-image: url(./img/Group\ 7.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .left>div:nth-child(2)>div:nth-child(5){
+      width: 10px;
+      height: 10.29px;
+      background-image: url(./img/Vector\ 5.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .left>div:nth-child(3){
+      width: 60px;
+      height: 18px;
+      font-size: 15px;
+      margin-top: 7px;
+      margin-left: 16px;
+      margin-bottom: 2px;
+    }
+
+    .left>div:nth-child(4){
+      width: 211px;
+      height: 68px;
+
+    }
+
+    .left>div:nth-child(4)>div:nth-child(1){
+      width: 211px;
+      height: 10px;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .left>div:nth-child(4)>div:nth-child(1)>div:nth-child(1){
+      width: 60px;
+      height: 12px;
+      margin-left: 48px;
+    }
+    
+    .left>div:nth-child(4)>div:nth-child(1)>div:nth-child(2){
+      width: 60px;
+      height: 12px;
+      margin-right: 30px;
+    }
+
+    .left>div:nth-child(4)>div:nth-child(2){
+      width: 211px;
+      height: 40px;
+      display: flex;
+    }
+
+    .left>div:nth-child(4)>div:nth-child(2)>div:nth-child(1){
+      width: 45px;
+      height: 36px;
+      background-image:url(./img/독가스.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-left: 3px;
+    }
+
+    .left>div:nth-child(4)>div:nth-child(2)>div:nth-child(2){
+      width: 160px;
+      height: 50px;
+      font-size: 5px;
+      line-height: 11px;
+      margin-top: 5px;
+    }
+
+
+
+    .left>div:nth-child(5){
+      width: 211px;
+      height: 66px;
+    }
+ 
+    .left>div:nth-child(5)>div:nth-child(1){
+      width: 211px;
+      height: 10px;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .left>div:nth-child(5)>div:nth-child(1)>div:nth-child(1){
+      width: 50px;
+      height: 12px;
+      margin-left: 53px;
+      margin-top: 7px;
+
+    }
+    
+    .left>div:nth-child(5)>div:nth-child(1)>div:nth-child(2){
+      width: 80px;
+      height: 12px;
+      margin-right: 19px;
+      margin-top: 7px;
+    }
+
+    .left>div:nth-child(5)>div:nth-child(2){
+      width: 211px;
+      height: 40px;
+      display: flex;
+    }
+
+    .left>div:nth-child(5)>div:nth-child(2)>div:nth-child(1){
+      width: 45px;
+      height: 36px;
+      background-image:url(./img/오브.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-left: 3px;
+      margin-top: 2px;
+    }
+
+    .left>div:nth-child(5)>div:nth-child(2)>div:nth-child(2){
+      width: 160px;
+      height: 50px;
+      font-size: 5px;
+      line-height: 11px;
+      margin-top: 9px;
+    }
+
+
+    .right{
+      width: 209px;
+      height: 217px;
+    }
+
+    .right>div:nth-child(1){
+      width: 64px;
+      height: 31px;
+      border: 2px solid #EA7B4B;
+      margin-left: 8px;
+      margin-top: 6px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    .right>div:nth-child(2){
+      width: 158px;
+      height: 30px;
+      margin-left: 10px;
+      background-image:url(./img/Group\ 50.png);
+      margin-top:7px;
+    }
+
+    .right>div:nth-child(3){
+      width: 171px;
+      height: 84px;
+      font-size: 10px;
+      margin-left:15px;
+      margin-top: 15px;
+      line-height: 14px;
+    }
+
+    .footer{
+      width: 420px;
+      height: 70px;
+      border: 1px solid black;
+      margin-top: 9px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #181818;
+    }
+
+    .footer>div{
+      width: 50px;
+      height: 50px;
+    }
+
+    .footer>div:nth-child(1){
+      background-image:url(./img/화면\ 캡처\ 2022-04-13\ 145514\ 1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .footer>div:nth-child(2){
+      background-image:url(./img/화면\ 캡처\ 2022-04-13\ 145547\ 1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+    }
+    .footer>div:nth-child(3){
+      background-image:url(./img/화면\ 캡처\ 2022-04-13\ 145732\ 1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+    }
+    .footer>div:nth-child(4){
+      background-image:url(./img/화면\ 캡처\ 2022-04-13\ 145749\ 1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+    }
+
+
+    .line{
+      width: 1px;
+      height: 150px;
+      border-left: 2px solid black ;
+      position: relative;
+      top:30px;
+      left:1px;
+
+    }
+
+    div{
+      font-weight: bold;
+      color:rgba(255, 255, 255, 0.808);
     }
 
   </style>
 </head>
 <body>
-  <div class="table">
-<!-- 갤럭시 -->
-    <div class="s22">
-      
-      <div>
-        <!-- 갤럭시 머리 -->
-        <div class="header">
-          <div>U+ 12:00</div>
-          <div></div>
-          <div>WIFI-zone</div>
-        </div>
-        <!-- 화면 -->
-        <div class="display">
-            <!--구글플레이로고  -->
-          <div class="google"></div>
-        </div>
+  <div class="phone">
+    <div class="header">
+      <div class="ham">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-
+      <div></div>
+      <div class="steam"></div>
     </div>
-      
+    <div class="menu">
+      <div>영웅 빌드</div>
+      <div>속성</div>
+      <div>무기,스크롤</div>
+      <div>보스</div>
+    </div>
+    <div class="selct">영웅 선택</div>
     
-    <div class="bulr"><h1>WELL COME</h1><h2>GUN FIR<span style=color:red>E</span>-Reborn</h2><div>공략 뿌수기</div>지금 바로 모바일 로 접속 하세요.</div> 
-  
-    <!-- 아이폰 -->
-    <div class="iphone">
-      <div class="display2">
-        <!-- m자탈모 -->
-        <div class="noch">
-          <div>KT 12:00</div>
+    <div class="main">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div>프린스</div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="main2">
+      <div class="left">
+        <div>영웅속성</div>
+        <div>
+          <div></div>
+          <div>105</div>
+          <div></div>
+          <div>95</div>
+          <div></div>
+          <div>5</div>
+        </div>
+        <div>영웅스킬</div>
+
+        <div>
+          <div>
+            <div>에너지오브</div>
+            <div>쿨타임:9.8</div>
+          </div>
           <div>
             <div></div>
+            <div>마력을 모아 전방에 에너지 오브를 발사한다 물체에 닿은 오브는 폭발하여 600의 일반데미지 를 부여하고,폭발 범위 내의 적을 2초 바인드 시킨다</div>
           </div>
-        <div>WIFi-zone</div>
-      <!-- 화면 -->
+        </div>
+
+
+        <div>
+          <div>
+            <div>연막탄</div>
+            <div>최대 소지량:8</div>
+          </div>
+          <div>
+            <div></div>
+            <div>산성 가스가 담긴 수류탄을 투척한다. 수류탄은 지면에 닿으면 3초간 지속되는 연막을 일으키며,연막 범위 내의 적에게 초당 150의 산성데미지를 입힌다</div>
+          </div>
+        </div>
       </div>
-      <div class="intro2"></div>
-      
-      
+
+      <div class="line"></div>
+
+      <div class="right">
+        <div>각성</div>
+        <div></div>
+        <div>도술에 정통하며 원소 친화력이 높다
+          영혼계에서 온 신비한손님, 뛰어난 도술사
+          에너지오브 를 사용해 적의 움직임을 봉쇄
+          기구한 신세로 원소와 더 가까워진 프린스
+          는 각종 원소를 능숙히 사용 도술과 연계
+          뛰어난 위력을 내뿜는다. </div>
       </div>
     </div>
-
-
-
-
+    <div class="footer">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 </body>
 </html>
