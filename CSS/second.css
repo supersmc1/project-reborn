@@ -1,0 +1,87 @@
+
+.second{
+  width: 100vw;
+  height: 50vh;
+  border-top:5px solid #d9c581;
+  border-bottom:5px solid #d9c581;
+  display: flex;
+}
+
+.leftimg{
+  width: 50vw;
+  height: 50vh;
+  background-image: url(/image/배너수정.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news{
+  width: 50vw;
+  height: 50vh;
+  border-left:1px solid #d9c581;
+}
+
+.head{
+  width: 50vw;
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #d9c581 ;
+  background-color: #161616;
+  color:  #d9c581;
+}
+
+.head>div:nth-child(2){
+  margin-left: 500px;
+}
+
+.datas{
+  width: 50vw;
+  height:43vh;
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lines{
+  width: 20vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9c581;
+  clip-path: polygon(10% 100%, 90% 100%, 100% 0, 0 0);
+}
+
+.lines>h1{
+  color: #262626;
+}
+
+.newsdata{
+  width: 50vw;
+  height: 38vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.newsdata>div{
+  width: 40vw;
+  height: 5vh;
+  margin: 10px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  font-size: 18px;
+  color: #9999;
+}
+
+.newsdata>div:hover{
+  color:  #d9c581;
+  cursor: pointer;
+}

@@ -1,0 +1,74 @@
+
+.fourth{
+  width: 100vw;
+  height: 80vh;
+  border: 1px solid black;
+}
+
+.hero{
+  width: 100vw;
+  height: 10vh;
+  background-color: #161616;
+  color:  #d9c581;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top:5px solid #d9c581;
+}
+
+.legends{
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+
+}
+
+.heroimgs{
+  width: 70vw;
+  height: 55vh;
+  border: 1px solid #d9c581;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroimgs>img{
+  width: 69.8vw;
+  height: 54.8vh;
+}
+
+.legcir{
+  width: 100vw;
+  height: 10vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #161616;
+  border-top:5px solid #d9c581;
+
+}
+
+.legcir>div{
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.legcir>div>img{
+  width: 4vw;
+}
+
+.legcir>div>img:hover{
+  cursor: pointer;
+}
+
+
