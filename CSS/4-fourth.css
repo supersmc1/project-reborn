@@ -44,12 +44,10 @@
 .legcir{
   width: 100vw;
   height: 10vh;
-  border: 1px solid black;
   display: flex;
   justify-content:center;
   align-items: center;
   background-color: #161616;
-  border-top:5px solid #d9c581;
 
 }
 
@@ -61,6 +59,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: 15px;
 }
 
 .legcir>div>img{

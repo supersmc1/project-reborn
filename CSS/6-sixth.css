@@ -1,0 +1,49 @@
+.sixth{
+  width: 100vw;
+  height: 24vh;
+  border-top: 5px solid #d9c581;
+  background-color: black;
+}
+
+.islogo{
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.islogo>div{
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.islogo>div>img{
+  width: 4.5vw;
+}
+
+.islogo>div:nth-child(1)>img{
+  width: 5.5vw;
+}
+
+.inc{
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.inc>div{
+  margin:20px;
+}
+
+.inc>img{
+  margin:20px;
+}

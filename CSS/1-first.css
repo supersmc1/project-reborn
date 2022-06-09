@@ -58,18 +58,17 @@
 }
 
 .iphone{
-  margin-left: 140px;
+  margin:140px
 }
 
 .gal{
-  margin-right: 140px;
+  margin: 140px;
 }
 
 
 .gal{
   width: 18vw;
   height: 70vh;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,14 +146,13 @@
 .iphone{
   width: 18vw;
   height: 70vh;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .iphone>img{
-  width:68vw;
+  width:22vw;
   position:absolute;
 }
 
