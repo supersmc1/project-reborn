@@ -16,7 +16,7 @@ const pichchd = pich.children
 const tutlechd = tutle.children
 
 console.dir(laychd[0])
-
+//각 영웅별 마우스 오버시 마우스 아웃시 이미지변환
 princechd[0].addEventListener('mouseover',function(){
   console.log('hello')
   princechd[0].src =  "./image/11.png"

@@ -19,7 +19,7 @@ const mpdiv = document.createElement('div')
 const mpdivs = document.createElement('div')
 const namecards = document.createElement('h1')
 const closebtn = document.createElement('button')
-
+//호버이벤트 이미지변경
 monkey.addEventListener('mouseover',function(){
   //console.log('hello')
   monkeychd[0].src = './image/흑육오누.png'
@@ -69,7 +69,7 @@ snake.addEventListener('mouseover',function(){
     snakechd[0].src = './image/규룡누.png'
   })
 })
-
+// 공통 함수로 묶음
 function mpdivclass (){
   twoboss.appendChild(mpdiv)
   mpdiv.style.width = '40vw'
@@ -101,12 +101,12 @@ function mpdivclass (){
   closebtn.style.backgroundColor = '#d9c581'
   closebtn.textContent = '닫기'
 }
-
+//닫기 버튼 
 closebtn.addEventListener('click',function(){
   twoboss.removeChild(mpdiv)
 })
 
-
+// 각보스별 클릭시 동영상재생
 monkey.addEventListener('click',function(){
   mpdivclass()
   mpdivs.style.backgroundImage = 'url(./image/test육오.gif)'
