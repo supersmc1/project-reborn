@@ -10,7 +10,7 @@
 .leftimg{
   width: 50vw;
   height: 50vh;
-  background-image: url(/image/배너수정.png);
+  background-image: url(./image/배너수정.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
