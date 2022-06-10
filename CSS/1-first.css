@@ -84,7 +84,6 @@
 .gif{
   width: 16.5vw;
   height: 35vh;
-  background-color:red;
   z-index: 2;
   position: relative;
   left: 3.5px;
@@ -159,7 +158,6 @@
 .gifs{
   width: 15vw;
   height: 35vh;
-  background-color:red;
   z-index: 2;
   position: relative;
   left:1px;
