@@ -2,7 +2,7 @@
 .first{
   width: 100vw;
   height: 100vh;
-  background-image:url(/image/img.jpg);
+  background-image:url(../image/img.jpg);
   background-color: rgb(17, 17, 17);
   background-position: center;
   background-size: contain;
@@ -41,7 +41,7 @@
   left: 200px;
   top:10px;
   border-radius: 20px;
-  background-image:url(/image/프린스앱.png);
+  background-image:url(../image/프린스앱.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@
   z-index: 2;
   position: relative;
   left: 3.5px;
-  background-image: url(/image/아이폰디스플레이.gif);
+  background-image: url(../image/아이폰디스플레이.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -100,7 +100,7 @@
   z-index: 2;
   top: 50px;
   left: 5px;
-  background-image: url(/image/앱스토어.png);
+  background-image: url(../image/앱스토어.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -126,7 +126,7 @@
 .bul>div:nth-child(1){
   width: 7vw;
   height: 7vw;
-  background-image: url(/image/qrCode-9cd0e170c1.png);
+  background-image: url(../image/qrCode-9cd0e170c1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -161,7 +161,7 @@
   z-index: 2;
   position: relative;
   left:1px;
-  background-image: url(/image/갤럭시디스플레이.gif);
+  background-image: url(../image/갤럭시디스플레이.gif);
   background-repeat: no-repeat;
   background-size:cover;
   background-position:70%;
@@ -175,7 +175,7 @@
   z-index: 2;
   top: 50px;
   left: 3px;
-  background-image: url(/image/플레이스토어.png);
+  background-image: url(../image/플레이스토어.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
