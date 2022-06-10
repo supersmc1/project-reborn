@@ -14,11 +14,10 @@ const lionchd = lion.children
 const shipchd = ship.children
 const snakechd = snake.children
 
-const fifth = document.querySelector('.fifth')
-const bossbox = document.querySelector('.bosslist')
+const twoboss = document.querySelector('.twoboss')
 const mpdiv = document.createElement('div')
 const mpdivs = document.createElement('div')
-const namecards = document.createElement('div')
+const namecards = document.createElement('h1')
 const closebtn = document.createElement('button')
 
 monkey.addEventListener('mouseover',function(){
@@ -72,13 +71,12 @@ snake.addEventListener('mouseover',function(){
 })
 
 function mpdivclass (){
-  fifth.appendChild(mpdiv)
+  twoboss.appendChild(mpdiv)
   mpdiv.style.width = '40vw'
-  mpdiv.style.height = '30vw'
+  mpdiv.style.height = '29vw'
+  mpdiv.style.border = '2px solid #d9c581'
   mpdiv.style.backgroundColor = 'black'
   mpdiv.style.position = 'absolute'
-  mpdiv.style.bottom = '140px'
-  mpdiv.style.left = '570px'
   mpdiv.style.display = 'flex'
   mpdiv.style.justifyContent = 'space-around'
   mpdiv.style.alignItems = 'center'
@@ -86,49 +84,71 @@ function mpdivclass (){
   mpdiv.appendChild(mpdivs)
   mpdiv.appendChild(namecards)
   mpdiv.appendChild(closebtn)
-  namecards.style.height = '8vh'
-  namecards.style.backgroundColor = '#161616'
-  namecards.style.display = 'flex'
-  namecards.style.justifyContent = 'center'
-  namecards.style.alignItems = 'center'
   namecards.style.color = '#d9c581'
   namecards.style.fontSize = '50px'
   namecards.style.fontWeight = 'bold'
+  namecards.style.fontFamily = 'GenKJwajinOTF-Bd'
+  namecards.style.position = 'relative'
+  namecards.style.top = '10px'
   mpdivs.style.width = '38vw'
   mpdivs.style.height = '20vw'
   mpdivs.style.backgroundRepeat = 'no-repeat'
   mpdivs.style.backgroundSize = 'cover'
   mpdivs.style.backgroundPosition = 'center'
-  closebtn.style.width = '5vw'
+  closebtn.style.width = '3vw'
   closebtn.style.height= '3vh'
+  closebtn.style.cursor= 'pointer'
   closebtn.style.backgroundColor = '#d9c581'
   closebtn.textContent = '닫기'
 }
 
 closebtn.addEventListener('click',function(){
-  fifth.removeChild(mpdiv)
+  twoboss.removeChild(mpdiv)
 })
 
 
 monkey.addEventListener('click',function(){
   mpdivclass()
-  namecards.style.width = '10vw'
   mpdivs.style.backgroundImage = 'url(./image/test육오.gif)'
   namecards.textContent = '육오'
 })
 
 fish.addEventListener('click',function(){
   mpdivclass()
-  namecards.style.width = '15vw'
   mpdivs.style.backgroundImage = 'url(./image/test어룡.gif)'
   namecards.textContent = '어룡의 후예'
 })
 
 ship.addEventListener('click',function(){
   mpdivclass()
-  namecards.style.width = '15vw'
   mpdivs.style.backgroundImage = 'url(./image/test해골배.gif)'
   namecards.textContent = '도깨비 함선'
 })
+
+snake.addEventListener('click',function(){
+  mpdivclass()
+  mpdivs.style.backgroundImage = 'url(./image/test규룡.gif)'
+  namecards.textContent = '규룡'
+})
+
+bear.addEventListener('click',function(){
+  mpdivclass()
+  mpdivs.style.backgroundImage = 'url(./image/test극지요왕.gif)'
+  namecards.textContent = '극지요왕'
+})
+
+stone.addEventListener('click',function(){
+  mpdivclass()
+  mpdivs.style.backgroundImage = 'url(./image/test골램.gif)'
+  namecards.textContent = '골램'
+})
+
+lion.addEventListener('click',function(){
+  mpdivclass()
+  mpdivs.style.backgroundImage = 'url(./image/test바람신.gif)'
+  namecards.textContent = '바람의 신'
+})
+
+
 
 

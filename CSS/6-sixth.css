@@ -36,8 +36,8 @@
   height: 12vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   color: white;
+  font-size: 20px;
 }
 
 .inc>div{
@@ -45,5 +45,6 @@
 }
 
 .inc>img{
-  margin:20px;
+  position: relative;
+  top:-20px;
 }

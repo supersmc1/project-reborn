@@ -2,6 +2,11 @@
 .first{
   width: 100vw;
   height: 100vh;
+  background-image:url(/image/img.jpg);
+  background-color: rgb(17, 17, 17);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .menu{
@@ -12,7 +17,7 @@
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  background-color:#161616;
+  background-color:#16161679;
 }
 
 .menu>li{
@@ -49,11 +54,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image:url(/image/img.jpg);
-  background-color: rgb(17, 17, 17);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 
 }
 
