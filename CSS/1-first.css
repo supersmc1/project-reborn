@@ -354,7 +354,7 @@
 
 @media (max-width:570px) {
   .menu>li{
-    font-size: 20px;
+    font-size: 18px;
     margin: 15px;
   }
 
@@ -397,5 +397,11 @@
   }
   .menu>li{
     margin: 8px;
+  }
+  .iphone{
+    margin:10px;
+  }
+  .gal{
+    margin:10px;
   }
 }

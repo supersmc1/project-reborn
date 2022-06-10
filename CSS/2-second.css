@@ -10,10 +10,14 @@
 .leftimg{
   width: 50vw;
   height: 50vh;
-  background-image: url(../image/배너수정.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftimg>img{
+  width: 50vw;
+  height: 50vh;
 }
 
 .news{
@@ -26,15 +30,15 @@
   width: 50vw;
   height: 7vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #d9c581 ;
   background-color: #161616;
   color:  #d9c581;
 }
 
-.head>div:nth-child(2){
-  margin-left: 500px;
+.head>div{
+  margin:20px
 }
 
 .datas{
@@ -84,4 +88,14 @@
 .newsdata>div:hover{
   color:  #d9c581;
   cursor: pointer;
+}
+
+@media (max-width:1500px){
+  .lines{
+    font-size: 10px;
+  }
+}
+
+@media (max-width:1300px){
+  
 }
