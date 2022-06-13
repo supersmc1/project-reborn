@@ -170,14 +170,10 @@
   height: 10vh;
 }
 }
-
-@media (max-width:700px) {
-}
-
-@media (max-width:570px) {
-
-}
-
 @media (max-width:500px) {
-
+  .newsdata>div {
+    height: 15vh;
+    font-size: 16px;
+    margin: 5px;
+  }
 }
