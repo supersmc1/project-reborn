@@ -13,6 +13,9 @@
 
   <title>Document</title>
   <style>
+    html{
+      scroll-behavior: smooth;
+    }
     *{
       margin: 0;
       padding: 0;
@@ -43,16 +46,16 @@
     <div class="first">
       <div class="menu">
         <div class="icon"></div>
-        <li>NEWS</li>
-        <li>GAME FEATURES</li>
-        <li>HEROES</li>
-        <li>BOSS</li>
+        <li class="item1">NEWS</li>
+        <li class="item2">GAME FEATURES</li>
+        <li class="item3">HEROES</li>
+        <li class="item4">BOSS</li>
       </div>
       <div class="main">
         <div class="gal">
           <img src="./image/iphone.png" alt="">
           <div class="gif"></div>
-          <div class="apple"></div>
+          <div class="apple"><a href="https://apps.apple.com/us/app/gunfire-reborn/id1606703078" target="_blank"></a></div>
         </div>
         <div class="bul">
           <div></div>
@@ -163,9 +166,18 @@
     </div>
     <div class="sixth">
       <div class="islogo">
-        <div class="facebook"><img src="./image/페이스북.png" alt=""></div>
-        <div class="twit"><img src="./image/트윗.png" alt=""></div>
-        <div class="discode"><img src="./image/디스코드.png" alt=""></div>
+        <div class="facebook">
+          <img src="./image/페이스북.png" alt="">
+          <a href="https://www.facebook.com/GunfireRebornOfficial"></a>
+        </div>
+        <div class="twit">
+          <img src="./image/트윗.png" alt="">
+          <a href="https://twitter.com/GunfireReborn"></a>
+        </div>
+        <div class="discode">
+          <img src="./image/디스코드.png" alt="">
+          <a href="https://discord.com/invite/gunfire-reborn"></a>
+        </div>
       </div>
       <div class="inc">
         <img src="./image/inc로고.png" alt="">
@@ -173,9 +185,10 @@
       </div>
     </div>
   </div>
+  <script defer src="./JS/1-first.js" ></script>
   <script defer src="./JS/3-third.js" ></script>
   <script defer src="./JS/4-fourth.js" ></script>
   <script defer src="./JS/5-fifth.js" ></script>
-  <script defer src="./JS/mdiaJS.js" ></script>
+  <script defer src="./JS/6-sixth.js" ></script>
 </body>
 </html>

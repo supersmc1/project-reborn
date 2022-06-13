@@ -25,6 +25,7 @@
 
 .islogo>div>img{
   width: 4.5vw;
+  cursor: pointer;
 }
 
 .islogo>div:nth-child(1)>img{
