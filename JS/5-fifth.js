@@ -118,10 +118,6 @@ function maxWidth (){
   }
 
   if (matchMedia("screen and (max-width: 500px)").matches){
-    namecards.style.fontSize = '40px'
-    mpdiv.style.height = '85vw'
-    mpdivs.style.height = '63vw'
-    closebtn.style.width = '10vw'
     namecards.style.fontSize = '30px'
     console.log('hello')
   }
