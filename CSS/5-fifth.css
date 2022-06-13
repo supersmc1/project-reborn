@@ -64,3 +64,40 @@
 .threeboss>div:nth-child(1)>img{
   width: 20vw;
 }
+
+@media (max-width:800px) {
+  .fifth{
+    height: 70vh;
+  }
+  .boss{
+    font-size: 18px;
+  }
+  .bosslist{
+    height: 60vh;
+  }
+  .bosslist>div{
+    height: 20vh;
+  }
+  .bosslist>div>div {
+    margin: 80px;
+  }
+  .bosslist>div>div>img {
+    width: 20vw;
+}
+
+}
+
+@media (max-width:500px) {
+  .fifth{
+    height: 50vh;
+  }
+  .bosslist>div>div {
+    margin: 40px;
+  }
+  .bosslist{
+    height: 42vh;
+  }
+  .bosslist>div{
+    height: 14vh;
+  }
+}

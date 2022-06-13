@@ -95,7 +95,7 @@ function mpdivclass (){
   mpdivs.style.backgroundRepeat = 'no-repeat'
   mpdivs.style.backgroundSize = 'cover'
   mpdivs.style.backgroundPosition = 'center'
-  closebtn.style.width = '3vw'
+  closebtn.style.width = '5vw'
   closebtn.style.height= '3vh'
   closebtn.style.cursor= 'pointer'
   closebtn.style.backgroundColor = '#d9c581'

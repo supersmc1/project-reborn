@@ -94,3 +94,67 @@
   width: 60vw;
   height: 50vh;
 }
+
+@media (max-width:1000px) {
+  .slider {
+    height: 40vh;
+  }
+  .slides>li {
+    height: 40vh;
+  }
+  .slides>li>img {
+    height: 40vh;
+}
+}
+
+@media (max-width:800px) {
+  .third {
+    height: 50vh;
+  }
+  .titless {
+    font-size: 18px;
+  }
+  .uhoho {
+    height: 40vh;
+  }
+
+  .slider {
+    height: 30vh;
+  }
+  .slides>li {
+    height: 30vh;
+  }
+  .slides>li>img {
+    height: 30vh;
+}
+}
+
+@media (max-width:500px) {
+  .third {
+    height: 40vh;
+  }
+  .uhoho {
+    height: 30vh;
+  }
+  .slider {
+    height: 20vh;
+  }
+  .slides>li {
+    height: 20vh;
+  }
+  .slides>li>img {
+    height: 20vh;
+  }
+}
+
+@media (max-width:400px) {
+  .slider {
+    height: 15vh;
+  }
+  .slides>li {
+    height: 15vh;
+  }
+  .slides>li>img {
+    height: 15vh;
+  }
+}

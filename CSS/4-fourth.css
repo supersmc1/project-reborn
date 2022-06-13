@@ -54,7 +54,7 @@
   width: 4vw;
   height: 4vw;
   border-radius: 50%;
-  margin-left: 30px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,10 +64,63 @@
 
 .legcir>div>img{
   width: 4vw;
+  height: 4vw;
 }
 
 .legcir>div>img:hover{
   cursor: pointer;
 }
 
+@media (max-width:800px) {
+  .fourth{
+    height: 50vh;
+  }
+  .hero{
+    font-size: 18px;
+  }
+  .legends {
+    height: 35vh;
+  }
+  .heroimgs {
+    height: 30vh;
+  }
+  
+  .heroimgs>img {
+    height: 29.8vh;
+  }
+  .legcir {
+    height: 5vh;
+  }
+  .legcir>div>img {
+    width: 5vw;
+    height: 5vw;
+}
+}
 
+@media (max-width:500px) {
+  .hero{
+    height: 8vh;
+  }
+  .fourth{
+    height: 42vh;
+  }
+
+  .legends {
+    height: 28vh;
+  }
+  .heroimgs {
+    height: 21vh;
+  }
+  
+  .heroimgs>img {
+    height: 20.8vh;
+  }
+  .legcir {
+    height: 6vh;
+  }
+  .legcir>div>img {
+    width: 6vw;
+    height: 6vw;
+}
+  
+}
