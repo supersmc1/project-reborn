@@ -354,7 +354,7 @@
 
 @media (max-width:570px) {
   .menu>li{
-    font-size: 18px;
+    font-size: 16px;
     margin: 15px;
   }
 
@@ -403,10 +403,5 @@
   }
   .gal{
     margin:10px;
-  }
-}
-@media (max-width:400px) {
-  .menu>li{
-    font-size: 16px;
   }
 }
