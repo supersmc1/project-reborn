@@ -179,12 +179,6 @@ lion.addEventListener('click',function(){
 
 })
 
-//새로고침 함수
-window.onresize = function () {
-  document.location.reload();
-};
-
-
 
 
 
