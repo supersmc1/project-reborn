@@ -106,48 +106,88 @@ closebtn.addEventListener('click',function(){
   twoboss.removeChild(mpdiv)
 })
 
+function maxWidth (){
+  if (matchMedia("screen and (max-width: 1000px)").matches){
+    namecards.style.fontSize = '40px'
+    mpdiv.style.width = '70vw'
+    mpdiv.style.height = '60vw'
+    mpdivs.style.width = '68vw'
+    mpdivs.style.height = '40vw'
+    closebtn.style.width = '10vw'
+    console.log('hello')
+  }
+
+  if (matchMedia("screen and (max-width: 500px)").matches){
+    namecards.style.fontSize = '40px'
+    mpdiv.style.height = '85vw'
+    mpdivs.style.height = '63vw'
+    closebtn.style.width = '10vw'
+    namecards.style.fontSize = '30px'
+    console.log('hello')
+  }
+
+}
+
 // 각보스별 클릭시 동영상재생
 monkey.addEventListener('click',function(){
   mpdivclass()
   mpdivs.style.backgroundImage = 'url(./image/test육오.gif)'
   namecards.textContent = '육오'
+  maxWidth()
 })
 
 fish.addEventListener('click',function(){
   mpdivclass()
   mpdivs.style.backgroundImage = 'url(./image/test어룡.gif)'
   namecards.textContent = '어룡의 후예'
+  maxWidth()
+
 })
 
 ship.addEventListener('click',function(){
   mpdivclass()
   mpdivs.style.backgroundImage = 'url(./image/test해골배.gif)'
   namecards.textContent = '도깨비 함선'
+  maxWidth()
 })
 
 snake.addEventListener('click',function(){
   mpdivclass()
   mpdivs.style.backgroundImage = 'url(./image/test규룡.gif)'
   namecards.textContent = '규룡'
+  maxWidth()
+
 })
 
 bear.addEventListener('click',function(){
   mpdivclass()
   mpdivs.style.backgroundImage = 'url(./image/test극지요왕.gif)'
   namecards.textContent = '극지요왕'
+  maxWidth()
+
 })
 
 stone.addEventListener('click',function(){
   mpdivclass()
   mpdivs.style.backgroundImage = 'url(./image/test골램.gif)'
   namecards.textContent = '골램'
+  maxWidth()
+
 })
 
 lion.addEventListener('click',function(){
   mpdivclass()
   mpdivs.style.backgroundImage = 'url(./image/test바람신.gif)'
   namecards.textContent = '바람의 신'
+  maxWidth()
+
 })
+
+//새로고침 함수
+window.onresize = function () {
+  document.location.reload();
+};
+
 
 
 
