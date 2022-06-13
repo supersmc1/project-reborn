@@ -90,6 +90,14 @@
   cursor: pointer;
 }
 
+.momo{
+  cursor: pointer;
+}
+
+.momo:hover{
+  color: #9999;
+}
+
 @media (max-width:1520px){
   .lines{
     font-size: 1vw;
