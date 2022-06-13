@@ -52,6 +52,8 @@
 .inc>img{
   position: relative;
   top:-20px;
+  width: 15vw;
+  height: 10vh;
 }
 @media (max-width:1150px) {
   .inc{
