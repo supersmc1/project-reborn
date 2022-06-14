@@ -1,10 +1,10 @@
 .first{
   width: 100vw;
   height: 100vh;
-  background-image:url(../image/img.jpg);
+  background-image:url(../image/testfiletwo.png);
   background-color: rgb(17, 17, 17);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
