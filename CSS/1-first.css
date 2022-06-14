@@ -1,7 +1,7 @@
 .first{
   width: 100vw;
   height: 100vh;
-  background-image:url(../image/testfiletwo.png);
+  background-image:url(../image/testfour2.png);
   background-color: rgb(17, 17, 17);
   background-position: center;
   background-size: cover;
@@ -68,13 +68,7 @@
 .top{
   width: 3vw;
   height: 3vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #b3a064;
-  color:white;
   position:fixed;
-  font-size: 1.5vw;
   right: 40px;
   bottom: 40px;
   z-index: 3;
@@ -84,20 +78,19 @@
   background-size: 500px;
   background-position: center;
   cursor: pointer;
+
 }
 
-.top>div:hover{
-  animation: tops 1s infinite;
-  position: relative;
-}
 @keyframes tops {
   0%{
-    bottom:5px;
+    bottom:10px;
   }
 }
 
 .top:hover{
   color:#ffc400;
+  animation: tops 1s infinite;
+
 }
 
 
