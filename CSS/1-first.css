@@ -45,6 +45,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
+  z-index: 3;
 }
 
 .main{
@@ -62,6 +63,41 @@
 
 .gal{
   margin: 140px;
+}
+
+.top{
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b3a064;
+  color:white;
+  position:fixed;
+  font-size: 1.5vw;
+  right: 40px;
+  bottom: 40px;
+  z-index: 3;
+  border-radius: 50%;
+  background-image: url(../image/수류탄.png);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.top>div:hover{
+  animation: tops 1s infinite;
+  position: relative;
+}
+@keyframes tops {
+  0%{
+    bottom:5px;
+  }
+}
+
+.top:hover{
+  color:#ffc400;
 }
 
 
@@ -182,7 +218,6 @@
   cursor: pointer;
 }
 
-
 @media (max-width:1670px) { 
   .bul>div:nth-child(2){
     display: none;
@@ -227,13 +262,12 @@
   .gifs{
     height: 28vh;
   }
+
   
 }
 @media (max-width:1200px){
   .icon{
-    position: fixed;
-    left: 50px;
-    top:45px;
+    display: none;
   }
 }
 
@@ -317,15 +351,16 @@
     position: relative;
     top: 10px;
   }
-}
-
-@media (max-width:710px) {
   .icon{
     position: fixed;
     left: 10px;
     top:45px;
   }
+  .top{
+    display: none;
+  }
 }
+
 
 @media (max-width:700px) {
   .play{
@@ -349,6 +384,7 @@
   .gifs{
     height: 15vh;
   }
+
 }
 
 @media (max-width:570px) {
@@ -369,7 +405,7 @@
   .icon{
     position: fixed;
     left: 5px;
-    top:35px;
+    top:70px;
   }
 }
 
@@ -408,4 +444,5 @@
   .gal{
     margin:10px;
   }
+
 }

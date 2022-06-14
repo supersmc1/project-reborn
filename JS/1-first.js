@@ -3,6 +3,7 @@ const items2 = document.querySelector('.item2')
 const items3 = document.querySelector('.item3')
 const items4 = document.querySelector('.item4')
 const icon = document.querySelector('.icon')
+const topss = document.querySelector('.top')
 
 const appstore = document.querySelector('.apple')
 const playstore = document.querySelector('.play')
@@ -17,6 +18,10 @@ let scrollX = this.scrollX
 console.log(scrollY)
 console.log(scrollX)
 }) //좌표값얻기 함수
+
+topss.addEventListener('click',function(){
+  window.scrollTo(0,0)
+})
 
 items1.addEventListener('click',function(){
   console.log('hi')
